@@ -1,3 +1,438 @@
-# Build folder and log file
-build/
-build.log
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Builds | Premium Custom PCs & Tech</title>
+    <meta name="description" content="South Africa's premier custom PC builder - Gaming Rigs, Workstations, Audio Systems, and Tech Solutions">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Orbitron:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Announcement Bar -->
+    <div class="announcement-bar">
+        <p>ðŸš€ Free shipping on orders over R2000 | âš¡ Build turnaround: 3-5 business days</p>
+    </div>
+
+    <!-- Header/Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo-container">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon"><i class="fas fa-microchip"></i></span>
+                    <span class="logo-text">PRECISION<span>BUILDS</span></span>
+                </a>
+            </div>
+
+            <div class="search-container">
+                <form class="search-form">
+                    <input type="text" placeholder="Search products..." class="search-input">
+                    <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="#custom-pcs">Custom PCs</a></li>
+                    <li><a href="#pre-built">Pre-Built</a></li>
+                    <li><a href="#components">Components</a></li>
+                    <li><a href="#audio">Audio</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button class="account-btn" id="account-btn"><i class="far fa-user"></i></button>
+                <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                <div class="cart-btn" id="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <button class="close-mobile-menu" id="close-mobile-menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <nav class="mobile-nav">
+            <ul>
+                <li><a href="#custom-pcs">Custom PCs</a></li>
+                <li><a href="#pre-built">Pre-Built</a></li>
+                <li><a href="#components">Components</a></li>
+                <li><a href="#audio">Audio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-account-actions">
+            <button class="btn btn-outline" id="mobile-login-btn">Login</button>
+            <button class="btn btn-primary" id="mobile-signup-btn">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider">
+            <div class="hero-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1591488320449-011701bb6704?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80')">
+                <div class="container">
+                    <div class="hero-content">
+                        <span class="hero-subtitle">ULTIMATE GAMING RIGS</span>
+                        <h1 class="hero-title">Build Your Dream PC</h1>
+                        <p class="hero-text">Custom-configured for peak performance</p>
+                        <div class="hero-actions">
+                            <a href="#custom-pcs" class="btn btn-primary btn-lg">Configure Now</a>
+                            <a href="#pre-built" class="btn btn-outline btn-lg">Browse Pre-Built</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Category Tiles -->
+    <section class="category-tiles">
+        <div class="container">
+            <div class="category-tile">
+                <a href="#gaming-pcs">
+                    <div class="category-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Gaming PCs</h3>
+                    <p>High FPS Machines</p>
+                </a>
+            </div>
+            <div class="category-tile">
+                <a href="#workstations">
+                    <div class="category-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Workstations</h3>
+                    <p>For Creators & Pros</p>
+                </a>
+            </div>
+            <div class="category-tile">
+                <a href="#budget-pcs">
+                    <div class="category-icon">
+                        <i class="fas fa-wallet"></i>
+                    </div>
+                    <h3>Budget Builds</h3>
+                    <p>Value Performance</p>
+                </a>
+            </div>
+            <div class="category-tile">
+                <a href="#audio">
+                    <div class="category-icon">
+                        <i class="fas fa-headphones"></i>
+                    </div>
+                    <h3>Audio Gear</h3>
+                    <p>Studio & Gaming</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Products</h2>
+                <a href="#shop-all" class="view-all">View All</a>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-badge">BESTSELLER</div>
+                    <div class="product-wishlist">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Gaming+PC" alt="Neon Vortex Gaming PC">
+                        <div class="product-actions">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Neon Vortex Gaming PC</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(42)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">R24,999</span>
+                            <span class="original-price">R27,499</span>
+                        </div>
+                        <div class="product-specs">
+                            <ul>
+                                <li>RTX 4080</li>
+                                <li>Intel i7-13700K</li>
+                                <li>32GB DDR5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-badge">NEW</div>
+                    <div class="product-wishlist">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Workstation" alt="Pro Creator Workstation">
+                        <div class="product-actions">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Pro Creator Workstation</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-count">(18)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">R32,499</span>
+                        </div>
+                        <div class="product-specs">
+                            <ul>
+                                <li>RTX 4090</li>
+                                <li>Intel i9-13900K</li>
+                                <li>64GB DDR5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-badge">SALE</div>
+                    <div class="product-wishlist">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Budget+PC" alt="Value Storm PC">
+                        <div class="product-actions">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Value Storm PC</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-count">(56)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">R12,999</span>
+                            <span class="original-price">R14,999</span>
+                        </div>
+                        <div class="product-specs">
+                            <ul>
+                                <li>RTX 3060 Ti</li>
+                                <li>Ryzen 5 5600X</li>
+                                <li>16GB DDR4</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-wishlist">
+                        <button class="wishlist-btn"><i class="far fa-heart"></i></button>
+                    </div>
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x300?text=Audio+Gear" alt="Studio Pro Headset">
+                        <div class="product-actions">
+                            <button class="quick-view">Quick View</button>
+                            <button class="add-to-cart">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-details">
+                        <h3 class="product-title">Studio Pro Headset</h3>
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-count">(87)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">R2,499</span>
+                        </div>
+                        <div class="product-specs">
+                            <ul>
+                                <li>50mm Drivers</li>
+                                <li>Noise Cancelling</li>
+                                <li>Detachable Mic</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PC Builder CTA -->
+    <section class="builder-cta">
+        <div class="container">
+            <div class="builder-content">
+                <h2>Not sure what you need?</h2>
+                <p>Our expert team will help you build the perfect system for your needs and budget.</p>
+                <a href="#builder" class="btn btn-primary btn-lg">Start PC Builder</a>
+            </div>
+            <div class="builder-image">
+                <img src="https://via.placeholder.com/500x300?text=PC+Builder+Tool" alt="PC Builder Tool">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"My gaming PC from Precision Builds outperforms everything I've owned before. The build quality is exceptional and their customer service is top-notch."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">T</div>
+                        <div class="author-info">
+                            <h4>Thabo M.</h4>
+                            <span>Johannesburg</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"As a video editor, I needed a powerful workstation. The team helped me configure the perfect machine that handles 4K editing without breaking a sweat."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">L</div>
+                        <div class="author-info">
+                            <h4>Lerato K.</h4>
+                            <span>Cape Town</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="testimonial-text">"The budget PC I got performs way above its price point. Great value and the RGB lighting looks amazing in my setup!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">S</div>
+                        <div class="author-info">
+                            <h4>Sipho D.</h4>
+                            <span>Durban</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Trusted Brands</h2>
+            </div>
+            
+            <div class="brands-grid">
+                <div class="brand-logo">
+                    <img src="https://via.placeholder.com/150x60?text=NVIDIA" alt="NVIDIA">
+                </div>
+                <div class="brand-logo">
+                    <img src="https://via.placeholder.com/150x60?text=Intel" alt="Intel">
+                </div>
+                <div class="brand-logo">
+                    <img src="https://via.placeholder.com/150x60?text=AMD" alt="AMD">
+                </div>
+                <div class="brand-logo">
+                    <img src="https://via.placeholder.com/150x60?text=Corsair" alt="Corsair">
+                </div>
+                <div class="brand-logo">
+                    <img src="https://via.placeholder.com/150x60?text=ASUS" alt="ASUS">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for exclusive deals, new arrivals, and tech tips.</p>
+            </div>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div
